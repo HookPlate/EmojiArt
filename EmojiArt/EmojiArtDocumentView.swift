@@ -14,7 +14,7 @@ struct EmojiArtDocumentView: View {
     let defaultEmojiFontSize: CGFloat = 40
     
     var body: some View {
-        VStack(spacing: 0){
+        VStack(spacing: 0) {
             documentBody
             PaletteChooser(emojiFontSize: defaultEmojiFontSize)
         }
