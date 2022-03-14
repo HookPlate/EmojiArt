@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+//this is the view that is the combination of the pallete and the palette icon
 struct PaletteChooser: View {
     
     var emojiFontSize: CGFloat = 40
@@ -40,8 +40,13 @@ struct PaletteChooser: View {
     
     @ViewBuilder
     var contextMenu: some View {
+        AnimatedActionButton(title: "Edit", systemImage: "pencil") {
+//            isEditing = true
+            paletteToEdit = store.palette(at: chosenPaletteIndex)
+        }
         AnimatedActionButton(title: "New", systemImage: "plus") {
             store.insertPalette(named: "New", emojis: "", at: chosenPaletteIndex)
+            paletteToEdit = store.palette(at: chosenPaletteIndex)
         }
         AnimatedActionButton(title: "Delete", systemImage: "minus.circle") {
             store.removePalette(at: chosenPaletteIndex)
@@ -72,7 +77,17 @@ struct PaletteChooser: View {
         }
         .id(palette.id)
         .transition(rollTransition)
+//        .popover(isPresented: $isEditing) {
+//            PaletteEditor(palette: $store.palettes[chosenPaletteIndex])
+//        }
+        .popover(item: $paletteToEdit) { palette in
+            PaletteEditor(palette: $store.palettes[palette])
+        }
     }
+    
+//    @State private var isEditing = false
+    @State private var paletteToEdit: Palette?
+    
     
     var rollTransition: AnyTransition {
         AnyTransition.asymmetric(
