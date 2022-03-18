@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		540741B427DF7021002AEFF4 /* PaletteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540741B327DF7021002AEFF4 /* PaletteManager.swift */; };
 		5426E351277CC74B00B44F34 /* EmojiArtApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5426E350277CC74B00B44F34 /* EmojiArtApp.swift */; };
 		5426E353277CC74B00B44F34 /* EmojiArtDocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5426E352277CC74B00B44F34 /* EmojiArtDocumentView.swift */; };
 		5426E355277CC74B00B44F34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5426E354277CC74B00B44F34 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		540741B327DF7021002AEFF4 /* PaletteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteManager.swift; sourceTree = "<group>"; };
 		5426E34D277CC74B00B44F34 /* EmojiArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5426E350277CC74B00B44F34 /* EmojiArtApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArtApp.swift; sourceTree = "<group>"; };
 		5426E352277CC74B00B44F34 /* EmojiArtDocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArtDocumentView.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				5426E35E277CE16B00B44F34 /* EmojiArtModel.swift */,
 				5426E36D277E60EC00B44F34 /* EmojiArtDocument.swift */,
 				5426E36F277F3ED300B44F34 /* UtilityExtensions.swift */,
+				540741B327DF7021002AEFF4 /* PaletteManager.swift */,
 				549302B427A5D26700D02D2B /* UtilityViews.swift */,
 				5426E360277CFBF900B44F34 /* EmojiArtModel.Background.swift */,
 				54E7D78C27D01C32002E41A6 /* PaletteStore.swift */,
@@ -162,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				549302B527A5D26700D02D2B /* UtilityViews.swift in Sources */,
+				540741B427DF7021002AEFF4 /* PaletteManager.swift in Sources */,
 				54E7D78D27D01C32002E41A6 /* PaletteStore.swift in Sources */,
 				548E375427DBA8DB00D42105 /* PaletteEditor.swift in Sources */,
 				5426E353277CC74B00B44F34 /* EmojiArtDocumentView.swift in Sources */,
